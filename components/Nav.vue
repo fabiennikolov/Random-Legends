@@ -9,7 +9,7 @@
       <NuxtLink to="/">
         FAQ
       </NuxtLink>
-      <NuxtLink to="/">
+      <NuxtLink to="/contacts">
         Contacts
       </NuxtLink>
       <button class="b-1px border-white/30 rounded-2 bg-black px3 hover:(bg-violet-900 text-white)">
