@@ -1,7 +1,6 @@
 <h2 align="center">
 Random Legends
 </h2><br>
-<img src="@public/logo.png">
 
 <pre align="center">
 🧪 Working in Progress
