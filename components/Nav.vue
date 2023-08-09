@@ -10,7 +10,7 @@
         FAQ
       </NuxtLink>
       <NuxtLink to="/contacts">
-        Contacts
+        Register a team
       </NuxtLink>
       <button class="b-1px border-white/30 rounded-2 bg-black px3 hover:(bg-violet-900 text-white)">
         <NuxtLink to="/" class="mt3 flex">
