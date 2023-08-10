@@ -19,6 +19,26 @@
       >Watch on Twitch !<svg class="pl2 pt1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" /></svg></a>
     </div>
   </div>
+  <div mx-auto mt-10 max-w-300 px-15 py-10 leading-6 space-y-14>
+    <section class="grid gap-10 md:grid-cols-[1.5fr_1fr]">
+      <div lt-md="text-center" text-end="">
+        <h3 uppercase="" text-2xl="" mb-4="" font-bold="">
+          Unique Gameplay Experience
+        </h3>
+        <p> This custom game mode offers a unique twist to the traditional League of Legends experience. The randomization element adds an element of surprise and challenge, making each game different and exciting.</p>
+      </div>
+      <img src="public/esport1.jpg" width="400" lt-md="justify-self-center" rounded-2>
+    </section>
+    <section class="grid gap-10 md:grid-cols-[1fr_1.5fr]">
+      <img src="public/esport2.jpg" width="400" lt-md="justify-self-center" rounded-2>
+      <div lt-md="text-center" text-start="">
+        <h3 uppercase="" text-2xl="" mb-4="" font-bold="">
+          Appeal to Variety Seekers
+        </h3>
+        <p> Players who enjoy diverse gameplay experiences and thrive on adapting to new situations are the perfect match for this custom game mode. The random champion selection and itemization will require players to think on their feet, adapt their strategies, and make the most out of the resources they have.</p>
+      </div>
+    </section>
+  </div>
 </template>
 
 <style scoped>
@@ -37,28 +57,28 @@
     color: #5733FF; /* Transition to color 2 */
   }
   30% {
-    color: #d863f0; /* Transition back to start color */
+    color: #d863f0;
   }
   40% {
-    color: #65ebfd; /* Transition back to start color */
+    color: #65ebfd;
   }
   50% {
-    color: #f8f521; /* Transition back to start color */
+    color: #f8f521;
   }
   60% {
-    color: #FF5733; /* Transition back to start color */
+    color: #FF5733;
   }
   70% {
-    color: #33FF57; /* Transition back to start color */
+    color: #33FF57;
   }
   80% {
-    color: #5733FF; /* Transition back to start color */
+    color: #5733FF;
   }
   90% {
-    color: #d863f0; /* Transition back to start color */
+    color: #d863f0;
   }
   100% {
-    color: #FF5733; /* Transition back to start color */
+    color: #FF5733;
   }
 }
 </style>
