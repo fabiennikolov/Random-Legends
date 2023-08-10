@@ -1,8 +1,21 @@
 <template>
-  <Nav />
-  <main class="px-10 py-20 text-center">
-    <slot />
+  <div class="layout">
+    <Nav />
+    <main class="content min-h-screen pxa pya text-center">
+      <slot />
+    </main>
     <Footer />
-    <div class="mx-auto mt-5 text-center text-sm opacity-25" />
-  </main>
+  </div>
 </template>
+
+<style scoped>
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* main contenta se raztqga i vzima ostanaloto prostranstvo */
+}
+</style>
