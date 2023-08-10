@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Nav />
-    <main class="content min-h-screen pxa pya text-center">
+    <main class="content min-h-screen pxa pya">
       <slot />
     </main>
     <Footer />
