@@ -21,7 +21,7 @@ async function submit() {
 </script>
 
 <template>
-  <h1 mt-15 text-xl>
+  <h1 mt-15 text-center text-xl font-extrabold uppercase>
     Contact us to register your team
   </h1>
   <form @submit.prevent="submit">
