@@ -25,6 +25,10 @@ function toggleMobileMenu() {
           <NuxtLink to="/contacts" @click="toggleMobileMenu">
             Register a team
           </NuxtLink>
+          <NuxtLink to="/tournaments" @click="toggleMobileMenu">
+            Upcoming tournaments
+          </NuxtLink>
+          <DarkToggle />
         </div>
       </div>
     </div>
