@@ -1,0 +1,51 @@
+<script setup lang="ts">
+interface FaqItem {
+  question: string
+  answer: string
+  showAnswer: boolean
+}
+
+const faqItems = ref<FaqItem[]>([
+  {
+    question: 'How do i register my team ?',
+    answer: 'You can use the contact form or connect with us in discord',
+    showAnswer: false,
+  },
+  {
+    question: 'How do i know if im eligible for rewards',
+    answer: 'You can see the rules in our discord channel',
+    showAnswer: false,
+  },
+  {
+    question: 'What rewards i can earn',
+    answer: 'There are variety of rewards, such as cash, RP and more !',
+    showAnswer: false,
+  },
+])
+
+function toggleAnswer(faq: FaqItem) {
+  faq.showAnswer = !faq.showAnswer
+}
+</script>
+
+<template>
+  <div class="mx-auto p-6 container">
+    <h1 class="mb-10 text-3xl font-semibold">
+      Frequently Asked Questions
+    </h1>
+    <ul class="space-y-10">
+      <li v-for="(faq, index) in faqItems" :key="index">
+        <h2 class="m-2 inline b-1 b-white rounded-3 px3 py3 text-lg font-semibold" @click="toggleAnswer(faq)">
+          {{ faq.question }}
+        </h2>
+        <p v-if="faq.showAnswer" class="mt5 text-gray-600">
+          {{ faq.answer }}
+        </p>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<style>
+
+</style>
