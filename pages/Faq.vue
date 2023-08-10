@@ -29,16 +29,16 @@ function toggleAnswer(faq: FaqItem) {
 </script>
 
 <template>
-  <div class="mx-auto p-6 container">
+  <div class="mx-auto mt-15 p-6 container">
     <h1 class="mb-10 text-3xl font-semibold">
       Frequently Asked Questions
     </h1>
     <ul class="space-y-10">
       <li v-for="(faq, index) in faqItems" :key="index">
-        <h2 class="m-2 inline cursor-pointer b-1 b-white rounded-3 px3 py3 text-lg font-semibold" @click="toggleAnswer(faq)">
+        <h2 class="inline cursor-pointer b-1 b-white rounded-3 px1.5 py2 text-16px lg:(px-3 py-3 text-lg)" @click="toggleAnswer(faq)">
           {{ faq.question }}
         </h2>
-        <p v-if="faq.showAnswer" class="mt5 text-gray-600">
+        <p v-if="faq.showAnswer" class="mt5 text-sm text-gray2 lg:text-lg">
           {{ faq.answer }}
         </p>
       </li>
