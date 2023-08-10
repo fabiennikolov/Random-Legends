@@ -33,12 +33,15 @@ function toggleMobileMenu() {
       </div>
     </div>
     <transition name="fade">
-      <div v-if="showMobileMenu" class="p-4 text-white lg:hidden divide-y">
+      <div v-if="showMobileMenu" class="p-4 text-white/80 lg:hidden">
         <NuxtLink to="/faq" class="my-2 block" @click="toggleMobileMenu">
           FAQ
         </NuxtLink>
         <NuxtLink to="/contacts" class="my-2 block" @click="toggleMobileMenu">
           Register a team
+        </NuxtLink>
+        <NuxtLink to="/tournaments" @click="toggleMobileMenu">
+          Upcoming tournaments
         </NuxtLink>
       </div>
     </transition>
