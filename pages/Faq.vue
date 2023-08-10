@@ -29,7 +29,7 @@ function toggleAnswer(faq: FaqItem) {
 </script>
 
 <template>
-  <div class="mx-auto mt-15 p-6 container">
+  <div class="mx-auto mt-15 p-6 text-center container">
     <h1 class="mb-10 text-3xl font-semibold">
       Frequently Asked Questions
     </h1>
