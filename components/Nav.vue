@@ -1,29 +1,65 @@
+<script setup lang="ts">
+const showMobileMenu = ref(false)
+
+function toggleMobileMenu() {
+  showMobileMenu.value = !showMobileMenu.value
+}
+</script>
+
 <template>
-  <div class="mx-auto max-w-screen-2xl flex flex-1 items-center justify-between px-4">
-    <div class="flex justify-center gap-8 lg:text-1rem">
-      <NuxtLink to="/">
-        <img src="@/logo.png" class="my3 inline-block max-w-45">
-      </NuxtLink>
-    </div>
-    <div class="flex items-center justify-between text-sm text-white/80 space-x-4">
-      <NuxtLink to="/">
-        FAQ
-      </NuxtLink>
-      <NuxtLink to="/contacts">
-        Register a team
-      </NuxtLink>
-      <button class="b-1px border-white/30 rounded-2 bg-black px3 hover:(bg-violet-900 text-white)">
-        <NuxtLink to="/" class="mt3 flex">
-          Watch on Twitch !
-          <svg class="pb2 pl3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" /></svg>
+  <div class="nav-container">
+    <div class="mx-auto max-w-screen-2xl flex items-center justify-between px-4">
+      <div class="flex justify-center gap-8 lg:text-1rem">
+        <NuxtLink to="/">
+          <img src="@/logo.png" class="my-3 inline-block max-w-45">
         </NuxtLink>
-      </button>
+      </div>
+      <div class="flex items-center justify-between space-x-4">
+        <!-- Burger Menu Icon -->
+        <button class="text-white lg:hidden" @click="toggleMobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18" /></svg>
+        </button>
+        <!-- Desktop Menu Links -->
+        <div class="hidden text-sm text-white/80 lg:flex space-x-4">
+          <NuxtLink to="/faq" @click="toggleMobileMenu">
+            FAQ
+          </NuxtLink>
+          <NuxtLink to="/contacts" @click="toggleMobileMenu">
+            Register a team
+          </NuxtLink>
+        </div>
+      </div>
     </div>
+    <!-- Mobile Menu Container -->
+    <transition name="fade">
+      <div v-if="showMobileMenu" class="p-4 text-white lg:hidden divide-y">
+        <NuxtLink to="/faq" class="my-2 block" @click="toggleMobileMenu">
+          FAQ
+        </NuxtLink>
+        <NuxtLink to="/contacts" class="my-2 block" @click="toggleMobileMenu">
+          Register a team
+        </NuxtLink>
+      </div>
+    </transition>
   </div>
 </template>
 
 <style scoped>
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 a:hover {
   color: white;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
