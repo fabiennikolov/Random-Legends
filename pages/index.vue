@@ -27,10 +27,10 @@
         </h3>
         <p> This custom game mode offers a unique twist to the traditional League of Legends experience. The randomization element adds an element of surprise and challenge, making each game different and exciting.</p>
       </div>
-      <img src="public/esport1.jpg" width="400" lt-md="justify-self-center" rounded-2>
+      <img src="/esport1.jpg" width="400" lt-md="justify-self-center" rounded-2>
     </section>
     <section class="grid gap-10 md:grid-cols-[1fr_1.5fr]">
-      <img src="public/esport2.jpg" width="400" lt-md="justify-self-center" rounded-2>
+      <img src="/esport2.jpg" width="400" lt-md="justify-self-center" rounded-2>
       <div lt-md="text-center" text-start="">
         <h3 uppercase="" text-2xl="" mb-4="" font-bold="">
           Appeal to Variety Seekers
