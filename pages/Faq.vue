@@ -35,7 +35,7 @@ function toggleAnswer(faq: FaqItem) {
     </h1>
     <ul class="space-y-10">
       <li v-for="(faq, index) in faqItems" :key="index">
-        <h2 class="m-2 inline b-1 b-white rounded-3 px3 py3 text-lg font-semibold" @click="toggleAnswer(faq)">
+        <h2 class="m-2 inline cursor-pointer b-1 b-white rounded-3 px3 py3 text-lg font-semibold" @click="toggleAnswer(faq)">
           {{ faq.question }}
         </h2>
         <p v-if="faq.showAnswer" class="mt5 text-gray-600">
