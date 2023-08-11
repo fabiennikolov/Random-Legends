@@ -5,6 +5,10 @@ interface FaqItem {
   showAnswer: boolean
 }
 
+const form = reactive({
+  email: '',
+})
+
 const faqItems = ref<FaqItem[]>([
   {
     question: 'How do i register my team ?',
@@ -43,6 +47,12 @@ function toggleAnswer(faq: FaqItem) {
         </p>
       </li>
     </ul>
+  </div>
+  <div grid mxa mt15 justify-center>
+    <h1 text-7>
+      Sign up for our newsletter
+    </h1>
+    <FormInput id="Email" v-model="form.email" type="email" placeholder="Email" />
   </div>
 </template>
 
