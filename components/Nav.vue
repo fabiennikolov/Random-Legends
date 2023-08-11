@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const showMobileMenu = ref(false)
 
+const menuItems = [
+  { id: 1, text: 'FAQ', route: '/faq' },
+  { id: 2, text: 'Register a team', route: '/contacts' },
+  { id: 3, text: 'Upcoming tournaments', route: '/tournaments' },
+  { id: 4, text: 'Become a partner', route: '/partner' },
+  { id: 5, text: 'Rules', route: '/rules' },
+]
+
 function toggleMobileMenu() {
   showMobileMenu.value = !showMobileMenu.value
 }
@@ -19,41 +27,21 @@ function toggleMobileMenu() {
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18" /></svg>
         </button>
         <div class="hidden text-sm text-white/80 lg:flex space-x-4">
-          <NuxtLink to="/faq" @click="toggleMobileMenu">
-            FAQ
-          </NuxtLink>
-          <NuxtLink to="/contacts" @click="toggleMobileMenu">
-            Register a team
-          </NuxtLink>
-          <NuxtLink to="/tournaments" @click="toggleMobileMenu">
-            Upcoming tournaments
-          </NuxtLink>
-          <NuxtLink to="/Partner" @click="toggleMobileMenu">
-            Become a partner
-          </NuxtLink>
-          <NuxtLink to="/rules" @click="toggleMobileMenu">
-            Rules
-          </NuxtLink>
+          <template v-for="item in menuItems" :key="item.id">
+            <NuxtLink :to="item.route" @click="toggleMobileMenu">
+              {{ item.text }}
+            </NuxtLink>
+          </template>
         </div>
       </div>
     </div>
     <transition name="fade">
       <div v-if="showMobileMenu" class="grid p-4 text-center text-white/80 lg:hidden space-y-2">
-        <NuxtLink to="/faq" class="" @click="toggleMobileMenu">
-          FAQ
-        </NuxtLink>
-        <NuxtLink to="/contacts" class="" @click="toggleMobileMenu">
-          Register a team
-        </NuxtLink>
-        <NuxtLink to="/tournaments" @click="toggleMobileMenu">
-          Upcoming tournaments
-        </NuxtLink>
-        <NuxtLink to="/partner" @click="toggleMobileMenu">
-          Become a partner
-        </NuxtLink>
-        <NuxtLink to="/rules" @click="toggleMobileMenu">
-          Rules
-        </NuxtLink>
+        <template v-for="item in menuItems" :key="item.id">
+          <NuxtLink :to="item.route" @click="toggleMobileMenu">
+            {{ item.text }}
+          </NuxtLink>
+        </template>
       </div>
     </transition>
   </div>
