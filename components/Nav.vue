@@ -28,20 +28,31 @@ function toggleMobileMenu() {
           <NuxtLink to="/tournaments" @click="toggleMobileMenu">
             Upcoming tournaments
           </NuxtLink>
-          <DarkToggle />
+          <NuxtLink to="/Partner" @click="toggleMobileMenu">
+            Become a partner
+          </NuxtLink>
+          <NuxtLink to="/rules" @click="toggleMobileMenu">
+            Rules
+          </NuxtLink>
         </div>
       </div>
     </div>
     <transition name="fade">
-      <div v-if="showMobileMenu" class="p-4 text-white/80 lg:hidden">
-        <NuxtLink to="/faq" class="my-2 block" @click="toggleMobileMenu">
+      <div v-if="showMobileMenu" class="grid p-4 text-center text-white/80 lg:hidden space-y-2">
+        <NuxtLink to="/faq" class="" @click="toggleMobileMenu">
           FAQ
         </NuxtLink>
-        <NuxtLink to="/contacts" class="my-2 block" @click="toggleMobileMenu">
+        <NuxtLink to="/contacts" class="" @click="toggleMobileMenu">
           Register a team
         </NuxtLink>
         <NuxtLink to="/tournaments" @click="toggleMobileMenu">
           Upcoming tournaments
+        </NuxtLink>
+        <NuxtLink to="/partner" @click="toggleMobileMenu">
+          Become a partner
+        </NuxtLink>
+        <NuxtLink to="/rules" @click="toggleMobileMenu">
+          Rules
         </NuxtLink>
       </div>
     </transition>
