@@ -26,7 +26,7 @@ async function submit() {
   </h1>
   <form @submit.prevent="submit">
     <div px-2>
-      <div class="mxa my-2rem max-w-200 b-transparent border-[#B2BDD4] rounded-2 p-8 text-white shadow-xl drop-shadow-md">
+      <div class="mxa max-w-200 b-transparent rounded-2 p-4 text-white shadow-xl drop-shadow-md">
         <FormInput id="Name" v-model="form.name" placeholder="Team Name" />
         <FormInput id="Email" v-model="form.email" type="email" placeholder="Email" />
         <FormInput id="Number" v-model="form.number" placeholder="Number" />
