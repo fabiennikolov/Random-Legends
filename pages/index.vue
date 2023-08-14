@@ -37,6 +37,7 @@
         <p> Players who enjoy diverse gameplay experiences and thrive on adapting to new situations are the perfect match for this custom game mode. The random champion selection and itemization will require players to think on their feet, adapt their strategies, and make the most out of the resources they have.</p>
       </div>
     </section>
+    <Subscribtion />
   </div>
 </template>
 
