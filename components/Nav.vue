@@ -19,18 +19,18 @@ function toggleMobileMenu() {
     <div class="mx-auto max-w-screen-2xl flex items-center justify-between border-b-1 border-white/9 px-4">
       <div class="flex justify-center gap-8 lg:text-1rem">
         <NuxtLink to="/">
-          <img src="@/logo.png" class="my-3 inline-block max-w-45">
+          <img src="@/logo.png" class="my-3 mr--9 inline-block max-w-35 lg:max-w-45">
         </NuxtLink>
         <Search />
       </div>
-      <div class="flex items-center justify-between space-x-4">
+      <div class="flex items-center justify-between uppercase space-x-4">
         <button class="text-white lg:hidden" @click="toggleMobileMenu">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18" /></svg>
         </button>
 
-        <div class="hidden text-sm text-white/80 lg:flex space-x-4">
+        <div class="hidden text-sm font-600 text-white/80 lg:flex space-x-4">
           <template v-for="item in menuItems" :key="item.id">
-            <NuxtLink :to="item.route" @click="toggleMobileMenu">
+            <NuxtLink :to="item.route" class="px1 hover:(rounded-1 bg-white/9)" @click="toggleMobileMenu">
               {{ item.text }}
             </NuxtLink>
           </template>
@@ -38,9 +38,9 @@ function toggleMobileMenu() {
       </div>
     </div>
     <transition name="fade">
-      <div v-if="showMobileMenu" class="grid p-4 text-center text-white/80 lg:hidden space-y-2">
+      <div v-if="showMobileMenu" class="grid border-b-1 b-white/9 p-4 text-center lg:hidden space-y-2">
         <template v-for="item in menuItems" :key="item.id">
-          <NuxtLink :to="item.route" @click="toggleMobileMenu">
+          <NuxtLink :to="item.route" class="text-white/80 hover:(rounded-3 bg-white/9)" @click="toggleMobileMenu">
             {{ item.text }}
           </NuxtLink>
         </template>
