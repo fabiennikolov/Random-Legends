@@ -21,11 +21,13 @@ function toggleMobileMenu() {
         <NuxtLink to="/">
           <img src="@/logo.png" class="my-3 inline-block max-w-45">
         </NuxtLink>
+        <Search />
       </div>
       <div class="flex items-center justify-between space-x-4">
         <button class="text-white lg:hidden" @click="toggleMobileMenu">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18" /></svg>
         </button>
+
         <div class="hidden text-sm text-white/80 lg:flex space-x-4">
           <template v-for="item in menuItems" :key="item.id">
             <NuxtLink :to="item.route" @click="toggleMobileMenu">
