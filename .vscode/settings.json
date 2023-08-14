@@ -1,5 +1,6 @@
 {
   "prettier.enable": false,
+  "eslint.quiet": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
