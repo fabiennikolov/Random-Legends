@@ -37,9 +37,10 @@ async function submit() {
           Send
         </button>
         <p v-if="submitted" class="mt5 text-green-5">
-          Team sucessfully registered !
+          Request has been sent. We will contact you as soon as possible.
         </p>
       </div>
     </div>
   </form>
+  <Subscribtion />
 </template>

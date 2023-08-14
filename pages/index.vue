@@ -24,7 +24,9 @@
         <h3 uppercase="" text-2xl="" mb-4="" font-bold="">
           Unique Gameplay Experience
         </h3>
-        <p> This custom game mode offers a unique twist to the traditional League of Legends experience. The randomization element adds an element of surprise and challenge, making each game different and exciting.</p>
+        <p lt-md:text-3.5>
+          This custom game mode offers a unique twist to the traditional League of Legends experience. The randomization element adds an element of surprise and challenge, making each game different and exciting.
+        </p>
       </div>
       <img src="/esport1.jpg" width="400" lt-md="justify-self-center" rounded-2>
     </section>
@@ -34,11 +36,13 @@
         <h3 uppercase="" text-2xl="" mb-4="" font-bold="">
           Appeal to Variety Seekers
         </h3>
-        <p> Players who enjoy diverse gameplay experiences and thrive on adapting to new situations are the perfect match for this custom game mode. The random champion selection and itemization will require players to think on their feet, adapt their strategies, and make the most out of the resources they have.</p>
+        <p lt-md:text-3.5>
+          Players who enjoy diverse gameplay experiences and thrive on adapting to new situations are the perfect match for this custom game mode. The random champion selection and itemization will require players to think on their feet, adapt their strategies, and make the most out of the resources they have.
+        </p>
       </div>
     </section>
-    <Subscribtion />
   </div>
+  <subscribtion />
 </template>
 
 <style scoped>
