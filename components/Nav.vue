@@ -19,7 +19,7 @@ function toggleMobileMenu() {
     <div class="mx-auto max-w-screen-2xl flex items-center justify-between border-b-1 border-white/9 px-4">
       <div class="flex justify-center gap-8 lg:text-1rem">
         <NuxtLink to="/">
-          <img src="@/logo.png" class="my-3 mr--9 inline-block max-w-35 lg:max-w-45">
+          <img src="@/logo.png" class="my-3 inline-block max-w-35 lg:max-w-45">
         </NuxtLink>
         <Search />
       </div>
