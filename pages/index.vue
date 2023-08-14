@@ -18,7 +18,7 @@
       <a href="" tag="a" class="flex items-center b-1px border-white rounded-2 bg-black px3 text-center transition-all-300 hover:(bg-violet-900 text-white) focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600/[0.6] focus:ring-offset-gray-800/[0.6] focus:dark:ring-gray-400 focus:dark:ring-offset-gray-50">Watch on Twitch !<svg class="pl2 pt1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" /></svg></a>
     </div>
   </div>
-  <div mx-auto mt-10 max-w-300 px-15 py-10 leading-6 space-y-14>
+  <div class="mx-auto mt-10 max-w-300 px-15 py-10 leading-6 space-y-14">
     <section class="grid gap-10 md:grid-cols-[1.5fr_1fr]">
       <div lt-md="text-center" text-end="">
         <h3 uppercase="" text-2xl="" mb-4="" font-bold="">

@@ -24,7 +24,7 @@ async function submit() {
       <div class="px-6 py-10 space-y-8">
         <div>
           <h3 class="text-center text-6 font-bold leading-7 md:text-7">
-            Subscribe and recieve notifications for Upcomming tournaments
+            Subscribe and receive notifications for Upcoming tournaments
           </h3>
           <p class="mt-2 text-center text-white/80 lt-md:text-3.5">
             We wont spam you, pinky promise
