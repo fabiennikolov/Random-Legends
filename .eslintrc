@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@antfu",
-    "@unocss"
+    "@antfu"
+    // "@unocss"
   ]
 }
