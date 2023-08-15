@@ -15,7 +15,7 @@
           </p>
           <div class="mt-6 flex gap-x-4">
             <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto border-0 rounded-md bg-white/9 px-3.5 py-2 text-white shadow-sm ring-1 ring-white/10 ring-inset sm:text-sm sm:leading-6" placeholder="Enter your email">
-            <button type="submit" class="flex-none b-1 rounded-md px-3.5 text-sm font-semibold text-white hover:bg-white/9">
+            <button type="submit" class="btn">
               Subscribe
             </button>
           </div>
