@@ -55,7 +55,7 @@ function toggleMobileMenu() {
   top: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
 }
 
 a:hover {
