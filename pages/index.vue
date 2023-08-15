@@ -42,7 +42,7 @@
       </div>
     </section>
   </div>
-  <subscribtion />
+  <Newsletter />
 </template>
 
 <style scoped>

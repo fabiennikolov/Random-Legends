@@ -42,5 +42,5 @@ async function submit() {
       </div>
     </div>
   </form>
-  <Subscribtion />
+  <Newsletter />
 </template>

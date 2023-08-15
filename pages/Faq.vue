@@ -48,7 +48,7 @@ function toggleAnswer(faq: FaqItem) {
       </li>
     </ul>
   </div>
-  <subscribtion />
+  <Newsletter />
 </template>
 
 <style>
