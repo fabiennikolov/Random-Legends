@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import { SocialLink } from 'types';
+
 const menuItems = [
   { id: 1, text: 'FAQ', route: '/faq' },
   { id: 2, text: 'Register a team', route: '/contacts' },
   { id: 3, text: 'Upcoming tournaments', route: '/tournaments' },
   { id: 4, text: 'Become a partner', route: '/partner' },
   { id: 5, text: 'Rules', route: '/rules' },
+]
+
+const socialLinks: SocialLink[] = [
+
 ]
 </script>
 
@@ -19,8 +25,12 @@ const menuItems = [
           <li mb5 flex gap-2>
             <a href=""><UnoIcon icon="i-ic-round-facebook" /></a>
             <a href=""><UnoIcon icon="i-mdi-instagram" /></a>
-            <a href="https://www.tiktok.com/@fab_league" target="_blank"><UnoIcon icon="i-ic-round-tiktok" /></a>
-            <a href="https://discord.gg/3x9EVjfUjC" target="_blank"><UnoIcon icon="i-ic-baseline-discord" /></a>
+            <a href="https://www.tiktok.com/@fab_league" target="_blank">
+              <UnoIcon icon="i-ic-round-tiktok" />
+            </a>
+            <a href="https://discord.gg/3x9EVjfUjC" target="_blank">
+              <UnoIcon icon="i-ic-baseline-discord" />
+            </a>
             <a href=""><UnoIcon icon="i-mdi-twitch" /></a>
           </li>
         </ul>
@@ -28,7 +38,7 @@ const menuItems = [
     </div>
     <div class="mx-auto max-w-1120px flex items-center justify-center px-4 py-2 text-center text-gray-400 md:flex-row lg:text-5">
       <section>
-        <ul flex gap-5 lg:py-5>
+        <ul flex gap-5 lg:py-5 >
           <li>
             <NuxtLink to="/">
               Home
