@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SocialLink } from 'types';
+import type { SocialLink } from 'types'
 
 const menuItems = [
   { id: 1, text: 'FAQ', route: '/faq' },
@@ -23,22 +23,28 @@ const socialLinks: SocialLink[] = [
       <div flex flex-col items-end>
         <ul>
           <li mb5 flex gap-2>
-            <a href=""><UnoIcon icon="i-ic-round-facebook" /></a>
-            <a href=""><UnoIcon icon="i-mdi-instagram" /></a>
+            <a href="">
+              <UnoIcon class="w8 h8" icon="i-ic-round-facebook" />
+            </a>
+            <a href="">
+              <UnoIcon class="w8 h8" icon="i-mdi-instagram" />
+            </a>
             <a href="https://www.tiktok.com/@fab_league" target="_blank">
-              <UnoIcon icon="i-ic-round-tiktok" />
+              <UnoIcon class="w8 h8" icon="i-ic-round-tiktok" />
             </a>
             <a href="https://discord.gg/3x9EVjfUjC" target="_blank">
-              <UnoIcon icon="i-ic-baseline-discord" />
+              <UnoIcon class="w8 h8" icon="i-ic-baseline-discord" />
             </a>
-            <a href=""><UnoIcon icon="i-mdi-twitch" /></a>
+            <a href="">
+              <UnoIcon class="w8 h8" icon="i-mdi-twitch" />
+            </a>
           </li>
         </ul>
       </div>
     </div>
     <div class="mx-auto max-w-1120px flex items-center justify-center px-4 py-2 text-center text-gray-400 md:flex-row lg:text-5">
       <section>
-        <ul flex gap-5 lg:py-5 >
+        <ul flex gap-5 lg:py-5>
           <li>
             <NuxtLink to="/">
               Home
