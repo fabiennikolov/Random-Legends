@@ -7,5 +7,5 @@ defineProps<{
 </script>
 
 <template>
-  <i class="inline-block" :class="icon" />
+  <i class="inline-block h8 w8" :class="icon" />
 </template>
