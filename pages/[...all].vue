@@ -4,6 +4,9 @@ const router = useRouter()
 
 <template>
   <main p="x4 y10" text="center dark:gray-200">
+    <h1 text-6 font-bold>
+      404
+    </h1>
     <div text-4xl>
       <div i-carbon-warning inline-block />
     </div>
