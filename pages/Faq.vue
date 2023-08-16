@@ -5,26 +5,23 @@ interface FaqItem {
   showAnswer: boolean
 }
 
-const form = reactive({
-  email: '',
-})
+const faqItems: Ref<FaqItem[]> = ref([
+  {
+    question: 'How do I register my team ?',
+    answer: 'You can easily register your team by filling out the registration form or contacting us through our official Discord channel.',
+    showAnswer: false,
+  },
+  {
+    question: 'Am I eligible for rewards ?',
+    answer: 'To check your eligibility for rewards, please refer to the rules and guidelines provided in our Discord channel.',
+    showAnswer: false,
+  },
+  {
+    question: 'What kind of rewards can I earn ?',
+    answer: 'We offer a variety of exciting rewards, including cash prizes, in-game currency, and much more!',
+    showAnswer: false,
+  },
 
-const faqItems = ref<FaqItem[]>([
-  {
-    question: 'How do i register my team ?',
-    answer: 'You can use the contact form or connect with us in discord',
-    showAnswer: false,
-  },
-  {
-    question: 'How do i know if im eligible for rewards',
-    answer: 'You can see the rules in our discord channel',
-    showAnswer: false,
-  },
-  {
-    question: 'What rewards i can earn',
-    answer: 'There are variety of rewards, such as cash, RP and more !',
-    showAnswer: false,
-  },
 ])
 
 function toggleAnswer(faq: FaqItem) {
@@ -33,16 +30,20 @@ function toggleAnswer(faq: FaqItem) {
 </script>
 
 <template>
-  <div class="mx-auto mt-15 p-6 text-center container">
+  <div class="mx-auto mt-15 p-6 max-w-6xl">
     <h1 class="mb-10 text-3xl font-semibold">
       Frequently Asked Questions
     </h1>
-    <ul class="space-y-10">
+    <ul class="space-y-6">
       <li v-for="(faq, index) in faqItems" :key="index">
-        <h2 class="inline cursor-pointer b-1 b-white rounded-3 px1.5 py2 text-16px lg:(px-3 py-3 text-lg)" @click="toggleAnswer(faq)">
+        <h2
+          class=" cursor-pointer bg-white/9 rounded-3 px-4 py-2 text-lg hover:bg-white/12 duration-200"
+          @click="toggleAnswer(faq)"
+        >
           {{ faq.question }}
+          <UnoIcon icon="i-ic-round-add" class="float-right mt1" />
         </h2>
-        <p v-if="faq.showAnswer" class="mt5 text-sm text-gray2 lg:text-lg">
+        <p v-if="faq.showAnswer" class="mt-3 ml2 text-sm text-gray-300">
           {{ faq.answer }}
         </p>
       </li>
@@ -50,7 +51,3 @@ function toggleAnswer(faq: FaqItem) {
   </div>
   <Newsletter />
 </template>
-
-<style>
-
-</style>
