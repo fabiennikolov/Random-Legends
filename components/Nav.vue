@@ -2,11 +2,11 @@
 const showMobileMenu = ref(false)
 
 const menuItems = [
-  { id: 1, text: 'FAQ', route: '/faq' },
-  { id: 2, text: 'Register a team', route: '/contacts' },
-  { id: 3, text: 'Upcoming tournaments', route: '/tournaments' },
-  { id: 4, text: 'Become a partner', route: '/partner' },
-  { id: 5, text: 'Rules', route: '/rules' },
+  { text: 'FAQ', route: '/faq' },
+  { text: 'Register a team', route: '/contacts' },
+  { text: 'Upcoming tournaments', route: '/tournaments' },
+  { text: 'Become a partner', route: '/partner' },
+  { text: 'Rules', route: '/rules' },
 ]
 
 function toggleMobileMenu() {
@@ -16,7 +16,7 @@ function toggleMobileMenu() {
 
 <template>
   <div class="nav-container">
-    <div class="mx-auto max-w-screen-2xl flex items-center justify-between border-b-1 border-white/9 px-4">
+    <div class="mx-auto max-w-6xl flex items-center justify-between border-b-1 border-white/9 px-4">
       <div class="flex justify-center gap-8 lg:text-1rem">
         <NuxtLink to="/">
           <img src="@/logo.png" class="my-3 inline-block max-w-35 lg:max-w-45">
@@ -27,7 +27,6 @@ function toggleMobileMenu() {
         <button class="text-white lg:hidden" @click="toggleMobileMenu">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18" /></svg>
         </button>
-
         <div class="hidden text-sm font-600 text-white/80 lg:flex space-x-4">
           <template v-for="item in menuItems" :key="item.id">
             <NuxtLink :to="item.route" class="px1 hover:(rounded-1 bg-white/9)" @click="toggleMobileMenu">
