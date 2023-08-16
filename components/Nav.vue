@@ -29,7 +29,7 @@ function toggleMobileMenu() {
         </button>
         <div class="hidden text-sm font-600 text-white/80 lg:flex space-x-4">
           <template v-for="item in menuItems" :key="item.id">
-            <NuxtLink :to="item.route" class="px1 hover:(rounded-1 bg-white/9)" @click="toggleMobileMenu">
+            <NuxtLink :to="item.route" class="px2 py2 hover:(rounded-md bg-white/9)" @click="toggleMobileMenu">
               {{ item.text }}
             </NuxtLink>
           </template>
