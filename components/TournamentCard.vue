@@ -20,11 +20,13 @@ defineProps<TourInfo>()
       <div class="h-40 w-50">
         <img :src="image" class="mx-auto h-full object-contain">
       </div>
-      <a
-        class="mx-auto inline-block b-2 b-black/70 b-transparent rounded-2 bg-blue-1/3 px1 py1 text-sm font-medium shadow-md drop-shadow-md transition-all-300 hover:bg-gray/10"
-        :href="link" target="_blank"
-      >
-        {{ link }}</a>
+      <CoolButton>
+        <a
+          :href="link" target="_blank"
+        >
+          {{ link }}
+        </a>
+      </CoolButton>
     </div>
     <p v-if="description" class="mt-10px text-center leading-7">
       {{ description }}
