@@ -16,7 +16,7 @@
         href="" tag="a" class="h-14 flex cursor-pointer items-center justify-center border rounded-lg px-8 font-extrabold font-semibold text-white transition-all-300 duration-300 hover:bg-gray/7 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600/[0.6] focus:ring-offset-gray-800/[0.6] focus:dark:ring-gray-400 focus:dark:ring-offset-gray-50"
       >Sign up</a>
       <a href="" tag="a" class="flex items-center b-1px border-white rounded-2 bg-black px3 text-center transition-all-300 hover:(bg-violet-900 text-white) focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600/[0.6] focus:ring-offset-gray-800/[0.6] focus:dark:ring-gray-400 focus:dark:ring-offset-gray-50">Watch on Twitch !
-        <UnoIcon icon="i-mdi-twitch" class="ml1" />
+        <UnoIcon icon="i-mdi-twitch" class="ml1 w8 h8" />
       </a>
     </div>
   </div>
