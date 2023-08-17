@@ -41,9 +41,18 @@ function toggleAnswer(faq: FaqItem) {
           @click="toggleAnswer(faq)"
         >
           {{ faq.question }}
-          <UnoIcon icon="i-ic-round-add" class="float-right mt1" />
+          <UnoIcon
+            v-if="faq.showAnswer"
+            icon="i-ic-round-minus"
+            class="float-right mt1"
+          />
+          <UnoIcon
+            v-else
+            icon="i-ic-round-add"
+            class="float-right mt1"
+          />
         </h2>
-        <p v-if="faq.showAnswer" class="mt-3 ml2 text-sm text-gray-300">
+        <p v-if="faq.showAnswer" class="mt-3 ml2 text-gray-300">
           {{ faq.answer }}
         </p>
       </li>
