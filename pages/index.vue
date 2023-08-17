@@ -15,7 +15,7 @@
       <a
         href="" tag="a" class="h-14 flex cursor-pointer items-center justify-center border rounded-lg px-8 font-extrabold font-semibold text-white transition-all-300 duration-300 hover:bg-gray/7 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600/[0.6] focus:ring-offset-gray-800/[0.6] focus:dark:ring-gray-400 focus:dark:ring-offset-gray-50"
       >Sign up</a>
-      <CoolButton intent="unstyled" bg-violet-6 border-violet-6 text-white hover="border-white">
+      <CoolButton intent="unstyled" bg="#6441A4" border-violet-6 text-white hover="border-white">
         Watch on Twitch !
         <UnoIcon icon="i-mdi-twitch" class="ml1 w8 h8" />
       </CoolButton>
