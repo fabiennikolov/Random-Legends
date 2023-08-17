@@ -6,6 +6,7 @@ Random Legends
 🧪 Working in Progress
 </pre>
 
+<p align="center"
 <br>
 <a href="https://vitesse-nuxt3.netlify.app/">🖥 Online Preview</a>
 <br><br>
