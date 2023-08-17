@@ -25,7 +25,7 @@ function toggleMobileMenu() {
       </div>
       <div class="flex items-center justify-between uppercase space-x-4">
         <button class="text-white lg:hidden" @click="toggleMobileMenu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18" /></svg>
+          <UnoIcon icon="i-iconamoon-menu-burger-horizontal" w8 h8 />
         </button>
         <div class="hidden text-sm font-600 text-white/80 lg:flex space-x-4">
           <template v-for="item in menuItems" :key="item.id">
