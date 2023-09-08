@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid mx-auto max-w-300 justify-center gap-6 p-4 lg:grid-cols-4 lt-lg:w-fit">
+  <div class="grid mx-auto max-w-6xl justify-center gap-6 p-4 lg:grid-cols-4 lt-lg:w-fit">
     <TournamentCard
       v-for="card in cards" :key="card.title"
       v-bind="card"
