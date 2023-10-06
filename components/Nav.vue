@@ -15,8 +15,8 @@ function toggleMobileMenu() {
 </script>
 
 <template>
-  <div class="nav-container">
-    <div class="mx-auto max-w-6xl flex items-center justify-between border-b-1 border-white/9 px-4">
+  <div class="sticky top-0 z-100 nav-container backdrop-blur bg-transparent">
+    <div class="mx-auto w-full flex items-center justify-between border-b-1 border-white/9 px-4">
       <div class="flex justify-center gap-8 lg:text-1rem">
         <NuxtLink to="/">
           <img src="@/logo.png" class="my-3 inline-block max-w-35 lg:max-w-45">
@@ -49,14 +49,6 @@ function toggleMobileMenu() {
 </template>
 
 <style scoped>
-.nav-container {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(8px);
-}
-
 a:hover {
   color: white;
 }
